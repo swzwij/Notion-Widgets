@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+      width: 100%;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+      justify-content: space-between;
+    }
+
+    .icon {
+      font-size: 2em;
+      color: #7a7a7a
+    }
+
+
+    .previous:hover {
+        color: #454a99;
+    }
+
+    .next:hover {
+      color: #454a99;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+<div class="wrapper">
+    <div id="previous" onclick="navigate(this.id)" class="social">
+        <span class="icon previous"><i class="fa-solid fa-arrow-left"></i></span>
+    </div>
+
+    <div id="next" onclick="navigate(this.id)" class="social">
+        <span class="icon next"><i class="fa-solid fa-arrow-right"></i></span>
+    </div>
+</div>
+
+
+
+
+<script>
+    function navigate(id) 
+    {
+        if (id === "previous") 
+        {
+            window.open("https://swzwij.notion.site/Transform-89864c74e7354653b3ce1f909ac4adfb", '_blank').focus();
+        }
+        else if (id === "next") 
+        {
+            window.open("https://swzwij.notion.site/List-a9c477f9a36a40d3a507bb3038f3f568", '_blank').focus();
+        }
+    }
+</script>
+
+</body>
+</html>
